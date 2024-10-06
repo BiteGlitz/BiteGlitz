@@ -18,7 +18,7 @@ import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
-
+import Logo from "../../images/Logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
@@ -35,7 +35,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <img style={{ height: "60px" }} src={Logo} alt={"BiteGlitz"} />
           </a>
         </NavLogo>
         <MobileIcon>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
+          {/* <NavLink href="#projects">Projects</NavLink> */}
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
