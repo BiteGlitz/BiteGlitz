@@ -13,7 +13,7 @@ import {
   InterestTitle,
   InterestItem,
 } from "./AboutStyle"; // Import your styled components
-import AboutImg from "../../images/HeroImage.jpg"; // Import your about image
+import AboutImg from "../../images/AboutUs.png"; // Import your about image
 import { Bio } from "../../data/constants";
 
 const AboutSection = () => {
